@@ -97,6 +97,7 @@
             this.btnSignUpCompany.TabIndex = 15;
             this.btnSignUpCompany.Text = "Sign Up as a Company";
             this.btnSignUpCompany.UseVisualStyleBackColor = true;
+            this.btnSignUpCompany.Click += new System.EventHandler(this.BtnSignUpCompany_Click);
             // 
             // label6
             // 
@@ -122,6 +123,7 @@
             this.btnCompanyLogIn.TabIndex = 8;
             this.btnCompanyLogIn.Text = "Log In";
             this.btnCompanyLogIn.UseVisualStyleBackColor = true;
+            this.btnCompanyLogIn.Click += new System.EventHandler(this.BtnCompanyLogIn_Click);
             // 
             // groupBox1
             // 
@@ -181,6 +183,7 @@
             this.btnSignUpUser.TabIndex = 13;
             this.btnSignUpUser.Text = "Sign Up as a User";
             this.btnSignUpUser.UseVisualStyleBackColor = true;
+            this.btnSignUpUser.Click += new System.EventHandler(this.BtnSignUpUser_Click);
             // 
             // txtULIPassword
             // 
@@ -197,6 +200,7 @@
             this.btnUserLogIn.TabIndex = 8;
             this.btnUserLogIn.Text = "Log In";
             this.btnUserLogIn.UseVisualStyleBackColor = true;
+            this.btnUserLogIn.Click += new System.EventHandler(this.BtnUserLogIn_Click);
             // 
             // HomePage
             // 
@@ -207,6 +211,8 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "HomePage";
             this.Text = "Home Page";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.HomePage_FormClosed);
+            this.Load += new System.EventHandler(this.HomePage_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);

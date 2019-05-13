@@ -42,6 +42,7 @@
             this.btnAddVehicle.TabIndex = 0;
             this.btnAddVehicle.Text = "Add Vehicle";
             this.btnAddVehicle.UseVisualStyleBackColor = true;
+            this.btnAddVehicle.Click += new System.EventHandler(this.BtnAddVehicle_Click);
             // 
             // btnListVehicles
             // 
@@ -51,6 +52,7 @@
             this.btnListVehicles.TabIndex = 1;
             this.btnListVehicles.Text = "List Company\'s Vehicles";
             this.btnListVehicles.UseVisualStyleBackColor = true;
+            this.btnListVehicles.Click += new System.EventHandler(this.BtnListVehicles_Click);
             // 
             // btnLogOut
             // 
@@ -60,6 +62,7 @@
             this.btnLogOut.TabIndex = 5;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.BtnLogOut_Click);
             // 
             // button4
             // 
@@ -81,6 +84,8 @@
             this.Controls.Add(this.btnAddVehicle);
             this.Name = "CompanyHomePage";
             this.Text = "CompanyHomePage";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CompanyHomePage_FormClosed);
+            this.Load += new System.EventHandler(this.CompanyHomePage_Load);
             this.ResumeLayout(false);
 
         }

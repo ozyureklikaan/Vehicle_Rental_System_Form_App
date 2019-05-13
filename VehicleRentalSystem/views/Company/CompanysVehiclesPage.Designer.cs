@@ -1,4 +1,4 @@
-﻿namespace VehicleRentalSystem
+﻿namespace VehicleRentalSystem.views.Company
 {
     partial class CompanysVehiclesPage
     {
@@ -98,6 +98,7 @@
             this.btnListCompanysVehicle.TabIndex = 3;
             this.btnListCompanysVehicle.Text = "List";
             this.btnListCompanysVehicle.UseVisualStyleBackColor = true;
+            this.btnListCompanysVehicle.Click += new System.EventHandler(this.BtnListCompanysVehicle_Click);
             // 
             // dataGVCompanysVehicles
             // 
@@ -115,6 +116,7 @@
             this.Controls.Add(this.groupListCompanysVehicles);
             this.Name = "CompanysVehiclesPage";
             this.Text = "Company\'s Vehicles Page";
+            this.Load += new System.EventHandler(this.CompanysVehiclesPage_Load);
             this.groupListCompanysVehicles.ResumeLayout(false);
             this.groupListCompanysVehicles.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGVCompanysVehicles)).EndInit();

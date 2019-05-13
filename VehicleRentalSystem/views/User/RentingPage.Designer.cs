@@ -1,4 +1,4 @@
-﻿namespace VehicleRentalSystem.views.UserOperations
+﻿namespace VehicleRentalSystem.views.User
 {
     partial class RentingPage
     {
@@ -87,6 +87,7 @@
             this.btnRent.TabIndex = 3;
             this.btnRent.Text = "Rent";
             this.btnRent.UseVisualStyleBackColor = true;
+            this.btnRent.Click += new System.EventHandler(this.BtnRent_Click);
             // 
             // txtRentingTime
             // 
@@ -111,6 +112,7 @@
             this.Controls.Add(this.groupRentingVehicle);
             this.Name = "RentingPage";
             this.Text = "Renting Page";
+            this.Load += new System.EventHandler(this.RentingPage_Load);
             this.groupRentingVehicle.ResumeLayout(false);
             this.groupRentingVehicle.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGVRentingVehicle)).EndInit();

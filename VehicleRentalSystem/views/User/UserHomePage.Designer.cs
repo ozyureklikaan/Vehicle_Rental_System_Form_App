@@ -42,6 +42,7 @@
             this.btnLogOut.TabIndex = 9;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.BtnLogOut_Click);
             // 
             // button3
             // 
@@ -69,6 +70,7 @@
             this.btnRentAVehicle.TabIndex = 6;
             this.btnRentAVehicle.Text = "Rent A Vehicle";
             this.btnRentAVehicle.UseVisualStyleBackColor = true;
+            this.btnRentAVehicle.Click += new System.EventHandler(this.BtnRentAVehicle_Click);
             // 
             // UserHomePage
             // 
@@ -81,6 +83,8 @@
             this.Controls.Add(this.btnRentAVehicle);
             this.Name = "UserHomePage";
             this.Text = "UserHomePage";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.UserHomePage_FormClosed);
+            this.Load += new System.EventHandler(this.UserHomePage_Load);
             this.ResumeLayout(false);
 
         }

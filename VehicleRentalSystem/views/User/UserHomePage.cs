@@ -12,9 +12,34 @@ namespace VehicleRentalSystem.views.User
 {
     public partial class UserHomePage : Form
     {
-        public UserHomePage()
+        private string _usernameSession { get; set; }
+
+        public UserHomePage(string _usernameSession)
         {
             InitializeComponent();
+            this._usernameSession = _usernameSession;
+        }
+
+        private void UserHomePage_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UserHomePage_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            HomePage homePage = new HomePage();
+            homePage.Show();
+        }
+
+        private void BtnLogOut_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BtnRentAVehicle_Click(object sender, EventArgs e)
+        {
+            RentingPage rentingPage = new RentingPage();
+            rentingPage.Show();
         }
     }
 }

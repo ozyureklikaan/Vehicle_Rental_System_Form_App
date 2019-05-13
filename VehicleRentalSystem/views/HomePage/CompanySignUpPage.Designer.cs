@@ -150,6 +150,7 @@
             this.btnCompanySignUp.TabIndex = 3;
             this.btnCompanySignUp.Text = "Sign Up";
             this.btnCompanySignUp.UseVisualStyleBackColor = true;
+            this.btnCompanySignUp.Click += new System.EventHandler(this.BtnCompanySignUp_Click);
             // 
             // txtCSUCity
             // 
@@ -180,6 +181,8 @@
             this.Controls.Add(this.groupBox3);
             this.Name = "CompanySignUpPage";
             this.Text = "Company Sign Up Page";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CompanySignUpPage_FormClosed);
+            this.Load += new System.EventHandler(this.CompanySignUpPage_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.ResumeLayout(false);

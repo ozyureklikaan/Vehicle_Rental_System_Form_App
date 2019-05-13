@@ -45,8 +45,9 @@
             // 
             // groupBoxSignUp
             // 
-            this.groupBoxSignUp.Controls.Add(this.label17);
             this.groupBoxSignUp.Controls.Add(this.txtUSUAge);
+            this.groupBoxSignUp.Controls.Add(this.txtUSUUsername);
+            this.groupBoxSignUp.Controls.Add(this.label17);
             this.groupBoxSignUp.Controls.Add(this.label15);
             this.groupBoxSignUp.Controls.Add(this.label4);
             this.groupBoxSignUp.Controls.Add(this.label16);
@@ -55,7 +56,6 @@
             this.groupBoxSignUp.Controls.Add(this.btnUserSignUp);
             this.groupBoxSignUp.Controls.Add(this.txtUSUName);
             this.groupBoxSignUp.Controls.Add(this.txtUSUPassword);
-            this.groupBoxSignUp.Controls.Add(this.txtUSUUsername);
             this.groupBoxSignUp.Location = new System.Drawing.Point(12, 12);
             this.groupBoxSignUp.Name = "groupBoxSignUp";
             this.groupBoxSignUp.Size = new System.Drawing.Size(339, 295);
@@ -66,7 +66,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(35, 117);
+            this.label17.Location = new System.Drawing.Point(35, 201);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(32, 13);
             this.label17.TabIndex = 18;
@@ -74,7 +74,7 @@
             // 
             // txtUSUAge
             // 
-            this.txtUSUAge.Location = new System.Drawing.Point(129, 114);
+            this.txtUSUAge.Location = new System.Drawing.Point(129, 198);
             this.txtUSUAge.Name = "txtUSUAge";
             this.txtUSUAge.Size = new System.Drawing.Size(152, 20);
             this.txtUSUAge.TabIndex = 17;
@@ -91,7 +91,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(35, 201);
+            this.label4.Location = new System.Drawing.Point(35, 159);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(59, 13);
             this.label4.TabIndex = 5;
@@ -109,7 +109,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(35, 159);
+            this.label3.Location = new System.Drawing.Point(35, 117);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 4;
@@ -130,6 +130,7 @@
             this.btnUserSignUp.TabIndex = 3;
             this.btnUserSignUp.Text = "Sign Up";
             this.btnUserSignUp.UseVisualStyleBackColor = true;
+            this.btnUserSignUp.Click += new System.EventHandler(this.BtnUserSignUp_Click);
             // 
             // txtUSUName
             // 
@@ -140,14 +141,14 @@
             // 
             // txtUSUPassword
             // 
-            this.txtUSUPassword.Location = new System.Drawing.Point(129, 198);
+            this.txtUSUPassword.Location = new System.Drawing.Point(129, 156);
             this.txtUSUPassword.Name = "txtUSUPassword";
             this.txtUSUPassword.Size = new System.Drawing.Size(152, 20);
             this.txtUSUPassword.TabIndex = 2;
             // 
             // txtUSUUsername
             // 
-            this.txtUSUUsername.Location = new System.Drawing.Point(129, 156);
+            this.txtUSUUsername.Location = new System.Drawing.Point(129, 114);
             this.txtUSUUsername.Name = "txtUSUUsername";
             this.txtUSUUsername.Size = new System.Drawing.Size(152, 20);
             this.txtUSUUsername.TabIndex = 1;
@@ -160,6 +161,8 @@
             this.Controls.Add(this.groupBoxSignUp);
             this.Name = "UserSignUpPage";
             this.Text = "User Sign Up Page";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.UserSignUpPage_FormClosed);
+            this.Load += new System.EventHandler(this.UserSignUpPage_Load);
             this.groupBoxSignUp.ResumeLayout(false);
             this.groupBoxSignUp.PerformLayout();
             this.ResumeLayout(false);

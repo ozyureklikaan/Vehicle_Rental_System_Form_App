@@ -1,4 +1,4 @@
-﻿namespace VehicleRentalSystem
+﻿namespace VehicleRentalSystem.views.Company
 {
     partial class AddVehiclePage
     {
@@ -55,7 +55,7 @@
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnAddVehicle = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,7 +87,7 @@
             this.groupBox2.Controls.Add(this.checkBox4);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.textBox8);
-            this.groupBox2.Controls.Add(this.button4);
+            this.groupBox2.Controls.Add(this.btnAddVehicle);
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(510, 596);
@@ -309,14 +309,15 @@
             this.textBox8.Size = new System.Drawing.Size(212, 20);
             this.textBox8.TabIndex = 4;
             // 
-            // button4
+            // btnAddVehicle
             // 
-            this.button4.Location = new System.Drawing.Point(180, 556);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(150, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "List";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnAddVehicle.Location = new System.Drawing.Point(180, 556);
+            this.btnAddVehicle.Name = "btnAddVehicle";
+            this.btnAddVehicle.Size = new System.Drawing.Size(150, 23);
+            this.btnAddVehicle.TabIndex = 3;
+            this.btnAddVehicle.Text = "Add Vehicle";
+            this.btnAddVehicle.UseVisualStyleBackColor = true;
+            this.btnAddVehicle.Click += new System.EventHandler(this.BtnAddVehicle_Click);
             // 
             // AddVehiclePage
             // 
@@ -326,6 +327,7 @@
             this.Controls.Add(this.groupBox2);
             this.Name = "AddVehiclePage";
             this.Text = "Add Vehicle Page";
+            this.Load += new System.EventHandler(this.AddVehiclePage_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
@@ -361,6 +363,6 @@
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnAddVehicle;
     }
 }
