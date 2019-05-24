@@ -30,22 +30,18 @@
         {
             this.groupRentingVehicle = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtRenterName = new System.Windows.Forms.TextBox();
             this.btnRent = new System.Windows.Forms.Button();
-            this.txtRentingTime = new System.Windows.Forms.TextBox();
             this.dataGVRentingVehicle = new System.Windows.Forms.DataGridView();
+            this.comboRetingTime = new System.Windows.Forms.ComboBox();
             this.groupRentingVehicle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGVRentingVehicle)).BeginInit();
             this.SuspendLayout();
             // 
             // groupRentingVehicle
             // 
+            this.groupRentingVehicle.Controls.Add(this.comboRetingTime);
             this.groupRentingVehicle.Controls.Add(this.label1);
-            this.groupRentingVehicle.Controls.Add(this.label2);
-            this.groupRentingVehicle.Controls.Add(this.txtRenterName);
             this.groupRentingVehicle.Controls.Add(this.btnRent);
-            this.groupRentingVehicle.Controls.Add(this.txtRentingTime);
             this.groupRentingVehicle.Controls.Add(this.dataGVRentingVehicle);
             this.groupRentingVehicle.Location = new System.Drawing.Point(12, 12);
             this.groupRentingVehicle.Name = "groupRentingVehicle";
@@ -57,44 +53,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(57, 311);
+            this.label1.Location = new System.Drawing.Point(57, 298);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "Renting Time";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(57, 271);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Renter Name";
-            // 
-            // txtRenterName
-            // 
-            this.txtRenterName.Location = new System.Drawing.Point(177, 268);
-            this.txtRenterName.Name = "txtRenterName";
-            this.txtRenterName.Size = new System.Drawing.Size(212, 20);
-            this.txtRenterName.TabIndex = 4;
-            // 
             // btnRent
             // 
-            this.btnRent.Location = new System.Drawing.Point(150, 351);
+            this.btnRent.Location = new System.Drawing.Point(150, 338);
             this.btnRent.Name = "btnRent";
             this.btnRent.Size = new System.Drawing.Size(150, 23);
             this.btnRent.TabIndex = 3;
             this.btnRent.Text = "Rent";
             this.btnRent.UseVisualStyleBackColor = true;
             this.btnRent.Click += new System.EventHandler(this.BtnRent_Click);
-            // 
-            // txtRentingTime
-            // 
-            this.txtRentingTime.Location = new System.Drawing.Point(177, 308);
-            this.txtRentingTime.Name = "txtRentingTime";
-            this.txtRentingTime.Size = new System.Drawing.Size(212, 20);
-            this.txtRentingTime.TabIndex = 1;
             // 
             // dataGVRentingVehicle
             // 
@@ -103,6 +76,46 @@
             this.dataGVRentingVehicle.Name = "dataGVRentingVehicle";
             this.dataGVRentingVehicle.Size = new System.Drawing.Size(449, 234);
             this.dataGVRentingVehicle.TabIndex = 0;
+            // 
+            // comboRetingTime
+            // 
+            this.comboRetingTime.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboRetingTime.FormattingEnabled = true;
+            this.comboRetingTime.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30"});
+            this.comboRetingTime.Location = new System.Drawing.Point(177, 295);
+            this.comboRetingTime.Name = "comboRetingTime";
+            this.comboRetingTime.Size = new System.Drawing.Size(212, 21);
+            this.comboRetingTime.TabIndex = 7;
             // 
             // RentingPage
             // 
@@ -124,10 +137,8 @@
 
         private System.Windows.Forms.GroupBox groupRentingVehicle;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtRenterName;
         private System.Windows.Forms.Button btnRent;
-        private System.Windows.Forms.TextBox txtRentingTime;
         private System.Windows.Forms.DataGridView dataGVRentingVehicle;
+        private System.Windows.Forms.ComboBox comboRetingTime;
     }
 }

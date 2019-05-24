@@ -111,6 +111,7 @@
             // txtCLIPassword
             // 
             this.txtCLIPassword.Location = new System.Drawing.Point(142, 91);
+            this.txtCLIPassword.MaxLength = 10;
             this.txtCLIPassword.Name = "txtCLIPassword";
             this.txtCLIPassword.Size = new System.Drawing.Size(152, 20);
             this.txtCLIPassword.TabIndex = 7;

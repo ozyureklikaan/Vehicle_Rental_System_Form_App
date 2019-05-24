@@ -7,14 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VehicleRentalSystem.Models.Concretes;
 
 namespace VehicleRentalSystem.views.Company
 {
     public partial class CompanyHomePage : Form
     {
-        private string _companySession { get; set; }
+        private Companies _companySession { get; set; }
 
-        public CompanyHomePage(string _companySession)
+        public CompanyHomePage(Companies _companySession)
         {
             InitializeComponent();
             this._companySession = _companySession;
@@ -38,13 +39,13 @@ namespace VehicleRentalSystem.views.Company
 
         private void BtnAddVehicle_Click(object sender, EventArgs e)
         {
-            AddVehiclePage addVehiclePage = new AddVehiclePage();
+            AddVehiclePage addVehiclePage = new AddVehiclePage(_companySession);
             addVehiclePage.Show();
         }
 
         private void BtnListVehicles_Click(object sender, EventArgs e)
         {
-            CompanysVehiclesPage companysVehiclesPage = new CompanysVehiclesPage();
+            CompanysVehiclesPage companysVehiclesPage = new CompanysVehiclesPage(_companySession);
             companysVehiclesPage.Show();
         }
     }

@@ -1,12 +1,16 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VehicleRentalSystem.Models.Concretes;
 
 namespace VehicleRentalSystem
 {
@@ -19,11 +23,7 @@ namespace VehicleRentalSystem
 
         private void UserSignUpPage_Load(object sender, EventArgs e)
         {
-            //txtUSUName.Text;
-            //txtUSULastName.Text;
-            //txtUSUUsername.Text;
-            //txtUSUPassword.Text;
-            //txtUSUAge.Text;
+
         }
 
         private void UserSignUpPage_FormClosed(object sender, FormClosedEventArgs e)
@@ -32,20 +32,49 @@ namespace VehicleRentalSystem
             homePage.Show();
         }
 
-        private void BtnUserSignUp_Click(object sender, EventArgs e)
+        private async void BtnUserSignUp_Click(object sender, EventArgs e)
         {
-            //User Information Checking.
-
-            //IF: Informations is appropriate, Company Adding to DB and redirect to HomePage for Log-In
-            if (true)
+            try
             {
-                MessageBox.Show("Registration is successful.");
+                bool success = false;
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri("http://localhost:54300");
+                    client.DefaultRequestHeaders.Accept.Clear();
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("Application/json"));
 
-                this.Close();
-            } //IF: Information is not appropriate, Show "try again" message.
-            else
+                    Persons person = new Persons()
+                    {
+                        PersonName = txtUSUName.Text,
+                        PersonLastName = txtUSULastName.Text,
+                        Age = int.Parse(txtUSUAge.Text),
+                        Username = txtUSUUsername.Text,
+                        Password = txtUSUPassword.Text
+                    };
+
+                    var serializedProduct = JsonConvert.SerializeObject(person);
+                    var content = new StringContent(serializedProduct, Encoding.UTF8, "application/json");
+                    var result = await client.PostAsync("api/Person", content);
+                    if (result.IsSuccessStatusCode)
+                    {
+                        success = true;
+                    }
+
+                    if (success)
+                    {
+                        MessageBox.Show("Registration is successful.");
+
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("This information is not appropriate. Please check and try again.");
+                    }
+                }
+            }
+            catch (Exception ex)
             {
-                MessageBox.Show("This information is not appropriate. Please check and try again.");
+                MessageBox.Show("Error happend : ex" + ex.Message);
             }
         }
     }

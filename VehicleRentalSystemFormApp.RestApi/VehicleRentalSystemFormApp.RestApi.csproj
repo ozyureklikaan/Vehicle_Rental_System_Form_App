@@ -48,6 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -59,6 +62,15 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="VehicleRentalSystem.BusinessLogic">
+      <HintPath>..\..\VehicleRentalSystemApp\VehicleRentalSystem.BusinessLogic\bin\Debug\VehicleRentalSystem.BusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="VehicleRentalSystem.Commons">
+      <HintPath>..\..\VehicleRentalSystemApp\VehicleRentalSystem.BusinessLogic\bin\Debug\VehicleRentalSystem.Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="VehicleRentalSystem.Models">
+      <HintPath>..\..\VehicleRentalSystemApp\VehicleRentalSystem.BusinessLogic\bin\Debug\VehicleRentalSystem.Models.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="views\Company\CompanyHomePage.cs">
@@ -72,6 +84,13 @@
     </Compile>
     <Compile Include="views\HomePage\CompanySignUpPage.Designer.cs">
       <DependentUpon>CompanySignUpPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\ResponseContent.cs" />
+    <Compile Include="views\User\ListUserVehiclesPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\User\ListUserVehiclesPage.Designer.cs">
+      <DependentUpon>ListUserVehiclesPage.cs</DependentUpon>
     </Compile>
     <Compile Include="views\User\RentingPage.cs">
       <SubType>Form</SubType>
@@ -117,6 +136,9 @@
     <EmbeddedResource Include="views\HomePage\CompanySignUpPage.resx">
       <DependentUpon>CompanySignUpPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\User\ListUserVehiclesPage.resx">
+      <DependentUpon>ListUserVehiclesPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\User\RentingPage.resx">
       <DependentUpon>RentingPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -145,6 +167,7 @@
     <EmbeddedResource Include="views\User\UserHomePage.resx">
       <DependentUpon>UserHomePage.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -29,64 +29,56 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboCompanyName = new System.Windows.Forms.ComboBox();
+            this.comboAirBag = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.txtDailyRentPrice = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtInstantKilometer = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.txtDailyKilometerLimit = new System.Windows.Forms.TextBox();
+            this.txtNumberOfSeats = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txtMinAgeLimit = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.txtBaggageVolume = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtDrivingLicense = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtVehicleModel = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtVehicleBrand = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.btnAddVehicle = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.comboCompanyName);
+            this.groupBox2.Controls.Add(this.comboAirBag);
             this.groupBox2.Controls.Add(this.label17);
             this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.textBox10);
-            this.groupBox2.Controls.Add(this.textBox14);
+            this.groupBox2.Controls.Add(this.txtDailyRentPrice);
             this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.textBox11);
+            this.groupBox2.Controls.Add(this.txtInstantKilometer);
             this.groupBox2.Controls.Add(this.label18);
             this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Controls.Add(this.textBox12);
-            this.groupBox2.Controls.Add(this.textBox15);
+            this.groupBox2.Controls.Add(this.txtDailyKilometerLimit);
+            this.groupBox2.Controls.Add(this.txtNumberOfSeats);
             this.groupBox2.Controls.Add(this.label16);
-            this.groupBox2.Controls.Add(this.textBox13);
+            this.groupBox2.Controls.Add(this.txtMinAgeLimit);
             this.groupBox2.Controls.Add(this.label19);
-            this.groupBox2.Controls.Add(this.textBox16);
+            this.groupBox2.Controls.Add(this.txtBaggageVolume);
             this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.textBox9);
+            this.groupBox2.Controls.Add(this.txtDrivingLicense);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.txtVehicleModel);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.textBox6);
+            this.groupBox2.Controls.Add(this.txtVehicleBrand);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.textBox7);
-            this.groupBox2.Controls.Add(this.checkBox3);
-            this.groupBox2.Controls.Add(this.checkBox4);
-            this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.textBox8);
             this.groupBox2.Controls.Add(this.btnAddVehicle);
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
@@ -94,6 +86,27 @@
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Add Vehicle To The Company";
+            // 
+            // comboCompanyName
+            // 
+            this.comboCompanyName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboCompanyName.FormattingEnabled = true;
+            this.comboCompanyName.Location = new System.Drawing.Point(226, 33);
+            this.comboCompanyName.Name = "comboCompanyName";
+            this.comboCompanyName.Size = new System.Drawing.Size(212, 21);
+            this.comboCompanyName.TabIndex = 31;
+            // 
+            // comboAirBag
+            // 
+            this.comboAirBag.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboAirBag.FormattingEnabled = true;
+            this.comboAirBag.Items.AddRange(new object[] {
+            "Available",
+            "Not Available"});
+            this.comboAirBag.Location = new System.Drawing.Point(226, 313);
+            this.comboAirBag.Name = "comboAirBag";
+            this.comboAirBag.Size = new System.Drawing.Size(212, 21);
+            this.comboAirBag.TabIndex = 30;
             // 
             // label17
             // 
@@ -113,20 +126,12 @@
             this.label13.TabIndex = 23;
             this.label13.Text = "Air Bag";
             // 
-            // textBox10
+            // txtDailyRentPrice
             // 
-            this.textBox10.Location = new System.Drawing.Point(226, 313);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(212, 20);
-            this.textBox10.TabIndex = 22;
-            this.textBox10.Text = "Combo box";
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(226, 433);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(212, 20);
-            this.textBox14.TabIndex = 28;
+            this.txtDailyRentPrice.Location = new System.Drawing.Point(226, 433);
+            this.txtDailyRentPrice.Name = "txtDailyRentPrice";
+            this.txtDailyRentPrice.Size = new System.Drawing.Size(212, 20);
+            this.txtDailyRentPrice.TabIndex = 28;
             // 
             // label14
             // 
@@ -137,12 +142,12 @@
             this.label14.TabIndex = 21;
             this.label14.Text = "Instant Kilometer";
             // 
-            // textBox11
+            // txtInstantKilometer
             // 
-            this.textBox11.Location = new System.Drawing.Point(226, 273);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(212, 20);
-            this.textBox11.TabIndex = 20;
+            this.txtInstantKilometer.Location = new System.Drawing.Point(226, 273);
+            this.txtInstantKilometer.Name = "txtInstantKilometer";
+            this.txtInstantKilometer.Size = new System.Drawing.Size(212, 20);
+            this.txtInstantKilometer.TabIndex = 20;
             // 
             // label18
             // 
@@ -162,19 +167,19 @@
             this.label15.TabIndex = 19;
             this.label15.Text = "Daily Kilometer Limit";
             // 
-            // textBox12
+            // txtDailyKilometerLimit
             // 
-            this.textBox12.Location = new System.Drawing.Point(226, 233);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(212, 20);
-            this.textBox12.TabIndex = 18;
+            this.txtDailyKilometerLimit.Location = new System.Drawing.Point(226, 233);
+            this.txtDailyKilometerLimit.Name = "txtDailyKilometerLimit";
+            this.txtDailyKilometerLimit.Size = new System.Drawing.Size(212, 20);
+            this.txtDailyKilometerLimit.TabIndex = 18;
             // 
-            // textBox15
+            // txtNumberOfSeats
             // 
-            this.textBox15.Location = new System.Drawing.Point(226, 393);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(212, 20);
-            this.textBox15.TabIndex = 26;
+            this.txtNumberOfSeats.Location = new System.Drawing.Point(226, 393);
+            this.txtNumberOfSeats.Name = "txtNumberOfSeats";
+            this.txtNumberOfSeats.Size = new System.Drawing.Size(212, 20);
+            this.txtNumberOfSeats.TabIndex = 26;
             // 
             // label16
             // 
@@ -185,12 +190,12 @@
             this.label16.TabIndex = 17;
             this.label16.Text = "Minimum Age Limit";
             // 
-            // textBox13
+            // txtMinAgeLimit
             // 
-            this.textBox13.Location = new System.Drawing.Point(226, 193);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(212, 20);
-            this.textBox13.TabIndex = 16;
+            this.txtMinAgeLimit.Location = new System.Drawing.Point(226, 193);
+            this.txtMinAgeLimit.Name = "txtMinAgeLimit";
+            this.txtMinAgeLimit.Size = new System.Drawing.Size(212, 20);
+            this.txtMinAgeLimit.TabIndex = 16;
             // 
             // label19
             // 
@@ -201,12 +206,12 @@
             this.label19.TabIndex = 25;
             this.label19.Text = "Baggage Volume";
             // 
-            // textBox16
+            // txtBaggageVolume
             // 
-            this.textBox16.Location = new System.Drawing.Point(226, 353);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(212, 20);
-            this.textBox16.TabIndex = 24;
+            this.txtBaggageVolume.Location = new System.Drawing.Point(226, 353);
+            this.txtBaggageVolume.Name = "txtBaggageVolume";
+            this.txtBaggageVolume.Size = new System.Drawing.Size(212, 20);
+            this.txtBaggageVolume.TabIndex = 24;
             // 
             // label12
             // 
@@ -217,12 +222,12 @@
             this.label12.TabIndex = 15;
             this.label12.Text = "Required Age Of Driving License";
             // 
-            // textBox9
+            // txtDrivingLicense
             // 
-            this.textBox9.Location = new System.Drawing.Point(226, 153);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(212, 20);
-            this.textBox9.TabIndex = 14;
+            this.txtDrivingLicense.Location = new System.Drawing.Point(226, 153);
+            this.txtDrivingLicense.Name = "txtDrivingLicense";
+            this.txtDrivingLicense.Size = new System.Drawing.Size(212, 20);
+            this.txtDrivingLicense.TabIndex = 14;
             // 
             // label8
             // 
@@ -233,12 +238,12 @@
             this.label8.TabIndex = 13;
             this.label8.Text = "Vehicle Model";
             // 
-            // textBox5
+            // txtVehicleModel
             // 
-            this.textBox5.Location = new System.Drawing.Point(226, 113);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(212, 20);
-            this.textBox5.TabIndex = 12;
+            this.txtVehicleModel.Location = new System.Drawing.Point(226, 113);
+            this.txtVehicleModel.Name = "txtVehicleModel";
+            this.txtVehicleModel.Size = new System.Drawing.Size(212, 20);
+            this.txtVehicleModel.TabIndex = 12;
             // 
             // label9
             // 
@@ -247,14 +252,14 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(73, 13);
             this.label9.TabIndex = 11;
-            this.label9.Text = "Vehicle Name";
+            this.label9.Text = "Vehicle Brand";
             // 
-            // textBox6
+            // txtVehicleBrand
             // 
-            this.textBox6.Location = new System.Drawing.Point(226, 73);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(212, 20);
-            this.textBox6.TabIndex = 10;
+            this.txtVehicleBrand.Location = new System.Drawing.Point(226, 73);
+            this.txtVehicleBrand.Name = "txtVehicleBrand";
+            this.txtVehicleBrand.Size = new System.Drawing.Size(212, 20);
+            this.txtVehicleBrand.TabIndex = 10;
             // 
             // label10
             // 
@@ -265,53 +270,9 @@
             this.label10.TabIndex = 9;
             this.label10.Text = "Company Name";
             // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(226, 33);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(212, 20);
-            this.textBox7.TabIndex = 8;
-            this.textBox7.Text = "comboBox olabilir";
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(282, 515);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(125, 17);
-            this.checkBox3.TabIndex = 7;
-            this.checkBox3.Text = "Untenanted Vehicles";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(110, 515);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(104, 17);
-            this.checkBox4.TabIndex = 6;
-            this.checkBox4.Text = "Rented Vehicles";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(57, 476);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(101, 13);
-            this.label11.TabIndex = 5;
-            this.label11.Text = "Number Of Vehicles";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(226, 473);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(212, 20);
-            this.textBox8.TabIndex = 4;
-            // 
             // btnAddVehicle
             // 
-            this.btnAddVehicle.Location = new System.Drawing.Point(180, 556);
+            this.btnAddVehicle.Location = new System.Drawing.Point(180, 513);
             this.btnAddVehicle.Name = "btnAddVehicle";
             this.btnAddVehicle.Size = new System.Drawing.Size(150, 23);
             this.btnAddVehicle.TabIndex = 3;
@@ -339,30 +300,26 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox txtDailyRentPrice;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtInstantKilometer;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox txtDailyKilometerLimit;
+        private System.Windows.Forms.TextBox txtNumberOfSeats;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtMinAgeLimit;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox txtBaggageVolume;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtDrivingLicense;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtVehicleModel;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtVehicleBrand;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Button btnAddVehicle;
+        private System.Windows.Forms.ComboBox comboCompanyName;
+        private System.Windows.Forms.ComboBox comboAirBag;
     }
 }

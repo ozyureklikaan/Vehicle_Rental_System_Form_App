@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.btnLogOut = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn = new System.Windows.Forms.Button();
+            this.btnListMyVehicles = new System.Windows.Forms.Button();
             this.btnRentAVehicle = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -44,23 +44,24 @@
             this.btnLogOut.UseVisualStyleBackColor = true;
             this.btnLogOut.Click += new System.EventHandler(this.BtnLogOut_Click);
             // 
-            // button3
+            // btn
             // 
-            this.button3.Location = new System.Drawing.Point(92, 162);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(200, 23);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "3.btn";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn.Location = new System.Drawing.Point(92, 162);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(200, 23);
+            this.btn.TabIndex = 8;
+            this.btn.Text = "-";
+            this.btn.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnListMyVehicles
             // 
-            this.button2.Location = new System.Drawing.Point(92, 123);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 23);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "2.btn";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnListMyVehicles.Location = new System.Drawing.Point(92, 123);
+            this.btnListMyVehicles.Name = "btnListMyVehicles";
+            this.btnListMyVehicles.Size = new System.Drawing.Size(200, 23);
+            this.btnListMyVehicles.TabIndex = 7;
+            this.btnListMyVehicles.Text = "List My Vehicles";
+            this.btnListMyVehicles.UseVisualStyleBackColor = true;
+            this.btnListMyVehicles.Click += new System.EventHandler(this.BtnListMyVehicles_Click);
             // 
             // btnRentAVehicle
             // 
@@ -78,8 +79,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(393, 322);
             this.Controls.Add(this.btnLogOut);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn);
+            this.Controls.Add(this.btnListMyVehicles);
             this.Controls.Add(this.btnRentAVehicle);
             this.Name = "UserHomePage";
             this.Text = "UserHomePage";
@@ -92,8 +93,8 @@
         #endregion
 
         private System.Windows.Forms.Button btnLogOut;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn;
+        private System.Windows.Forms.Button btnListMyVehicles;
         private System.Windows.Forms.Button btnRentAVehicle;
     }
 }

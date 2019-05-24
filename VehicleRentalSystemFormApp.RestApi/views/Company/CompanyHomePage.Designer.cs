@@ -31,7 +31,7 @@
             this.btnAddVehicle = new System.Windows.Forms.Button();
             this.btnListVehicles = new System.Windows.Forms.Button();
             this.btnLogOut = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAddVehicle
@@ -64,14 +64,14 @@
             this.btnLogOut.UseVisualStyleBackColor = true;
             this.btnLogOut.Click += new System.EventHandler(this.BtnLogOut_Click);
             // 
-            // button4
+            // btn
             // 
-            this.button4.Location = new System.Drawing.Point(118, 199);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(200, 23);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "3.btn";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn.Location = new System.Drawing.Point(118, 199);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(200, 23);
+            this.btn.TabIndex = 4;
+            this.btn.Text = "-";
+            this.btn.UseVisualStyleBackColor = true;
             // 
             // CompanyHomePage
             // 
@@ -79,7 +79,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(457, 367);
             this.Controls.Add(this.btnLogOut);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btn);
             this.Controls.Add(this.btnListVehicles);
             this.Controls.Add(this.btnAddVehicle);
             this.Name = "CompanyHomePage";
@@ -95,6 +95,6 @@
         private System.Windows.Forms.Button btnAddVehicle;
         private System.Windows.Forms.Button btnListVehicles;
         private System.Windows.Forms.Button btnLogOut;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn;
     }
 }

@@ -7,14 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VehicleRentalSystem.Models.Concretes;
+using VehicleRentalSystemFormApp.RestApi.views.User;
 
 namespace VehicleRentalSystem.views.User
 {
     public partial class UserHomePage : Form
     {
-        private string _usernameSession { get; set; }
+        private Persons _usernameSession { get; set; }
 
-        public UserHomePage(string _usernameSession)
+        public UserHomePage(Persons _usernameSession)
         {
             InitializeComponent();
             this._usernameSession = _usernameSession;
@@ -38,8 +40,14 @@ namespace VehicleRentalSystem.views.User
 
         private void BtnRentAVehicle_Click(object sender, EventArgs e)
         {
-            RentingPage rentingPage = new RentingPage();
+            RentingPage rentingPage = new RentingPage(_usernameSession);
             rentingPage.Show();
+        }
+
+        private void BtnListMyVehicles_Click(object sender, EventArgs e)
+        {
+            ListUserVehiclesPage listUserVehiclesPage = new ListUserVehiclesPage(_usernameSession);
+            listUserVehiclesPage.Show();
         }
     }
 }
